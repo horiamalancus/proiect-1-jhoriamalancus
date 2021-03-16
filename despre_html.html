@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="RO">
     <head>
         <title>Programare Web</title>
         <style>
@@ -7,8 +7,18 @@
               border: 1px solid black;
             }
         </style>
+        <meta charset=utf-8>
     </head>
     <body>
+
+        <nav>
+            <a href="index.html">Acasa</a> |
+            <a href="inregistreaza.html">Inregistreaza</a> |
+            <a href="video.html">Video</a> |
+            <a href="desen.html">Desen</a> |
+            <a href="despre_html.html">Despre HTML</a>
+        </nav>
+
         <h1>Programare Web</h1>
         
         <h2>Limbajul HTML</h2>
@@ -19,7 +29,7 @@
         Imaginea are atributul height de valoare 147.
         </p>
         
-        <img src=HTML_logo.png alt="picture" height="147">
+        <img src=imagini/HTML_logo.png alt="picture" height="147">
 
         <p><b>Tag-urile</b> html cele mai utilizate in realizarea tabelelor sunt:</p>
 
@@ -58,21 +68,22 @@
             <label for="parola">Parola:</label>
             <input type="password" id="parola" name="parola" value="abc"><br>
             <label for="culpref">Culoarea preferata:</label>
-            <select name="culori" id="culori">
+            <select name="culori" id="culpref">
                 <option value="rosu">Rosu</option>
                 <option value="albastru">Albastru</option>
                 <option value="verde">Verde</option>
                 <option value="galben">Galben</option>
             </select><br>
-            <label for="descriere">Descriere:</label>
-            <div style="height:120px;width:120px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"></div>
+
+            <label for="describe">Descriere</label>
+            <textarea id="describe" name="describe" rows="4" cols="50"></textarea><br>
             <input type="checkbox" id="check" name="check" value="check">
             <label for="check"> Sunt de acord cu contitiile</label><br>
             <br>
             <button type="button">Inregistreaza</button>
-          </form>
+        </form>
 
-          <p>
+        <p>
             Pentru a crea liste se pot folosit tag-urile:
             <br>
             <ol type="i">
@@ -83,20 +94,19 @@
                 <li>dt - termen dintr-o lista cu descrieri</li>
                 <li>dd - descrierea dintr-o lista cu descrieri</li>
             </ol>
+        </p>
 
-          </p>
-
-          <p>
+        <p>
             Pentru a insera un document HTML în altul se poate folosi tag-ul.
             <br>
             Astfel, exemplul de mai jos inserează conținutul de la adresa <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>.
-          </p>
-          <iframe src="https://html.spec.whatwg.org/multipage/" title="description"></iframe>
+        </p>
+        <iframe src="https://html.spec.whatwg.org/multipage/" title="description"></iframe>
 
-          <hr style="width:100%;text-align:left;margin-left:0">
-          <footer>
+        <hr style="width:100%;text-align:left;margin-left:0">
+        <footer>
             <p>&#169;. 2020. Programare Web</p>
-          </footer>
+        </footer>
 
     </body>
 </html>
