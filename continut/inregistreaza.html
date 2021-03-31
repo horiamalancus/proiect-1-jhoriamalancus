@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="RO">
+    <head>
+        <title>Inregistrare persoane</title>
+        <meta charset=utf-8>
+        <link rel="stylesheet" href="css/stil.css">
+    </head>
+
+    <body>
+
+        <header class="inregistrare">
+            <h1>Inregistrare persoane</h1>
+        </header>
+
+    <nav>
+        <a href="index.html">Acasa</a> |
+         <a href="inregistreaza.html">Inregistreaza</a> |
+         <a href="video.html">Video</a> |
+         <a href="desen.html">Desen</a> |
+         <a href="despre_html.html">Despre HTML</a> |
+         <a href="invat_js.html">Învăț JS</a>
+    </nav>    
+    
+    <section class="inregistreaza">
+        <h2>Inregistrare persoana</h2>
+        <form>
+            <fieldset>
+                <legend>Informatii generale:</legend>
+                <label for="numeutilizator" class="labelInregistreaza">Nume utilizator:</label>
+                <input type="text" id="numeutilizator" name="numeutilizator"><br><br>
+
+                <label for="parola" class="labelInregistreaza">Parola:</label>
+                <input type="password" id="parola" name="parola"><br><br>
+
+                <label for="nume" class="labelInregistreaza">Nume:</label>
+                <input type="text" id="nume" name="nume"><br><br>
+
+                <label for="prenume" class="labelInregistreaza">Prenume:</label>
+                <input type="text" id="prenume" name="prenume"><br><br>
+
+                <label for="email" class="labelInregistreaza">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="telefon" class="labelInregistreaza">Telefon:</label>
+                <input type="text" id="telefon" name="telefon" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+            </fieldset>
+        </form>
+    </section>
+
+    <br><br>
+
+    <section class="inregistreaza">
+        <h2>Inregistrare persoana</h2>
+        <form>
+            <fieldset>
+                <legend>Informatii personale:</legend>
+                <label for="numeutilizator" class="labelInregistreaza">Sexul:</label>
+                <select name="sex" id="sex">
+                    <option value="feminin">Feminin</option>
+                    <option value="masculin">Masculin</option>
+                  </select><br><br>
+
+                <label for="parola" class="labelInregistreaza">Mâncarea preferată:</label>
+                <input list="favfood" name="food" id="food">
+                <datalist id="favfood">
+                    <option value="Ciorba de burta">
+                    <option value="Gulas">
+                    <option value="Sarmale">
+                    <option value="Tocanita">
+                    <option value="Branza cu smantana">
+                </datalist><br><br>
+
+                <label for="color" class="labelInregistreaza">Culoarea preferată:</label>
+                <input type="color" id="color" name="color"><br><br>
+
+                <label for="data" class="labelInregistreaza">Data nașterii:</label>
+                <input type="date" id="data" name="data"><br><br>
+
+                <label for="time" class="labelInregistreaza">Ora nașterii:</label>
+                <input type="datetime-local" id="time" name="time"><br><br>
+
+                <label for="age" class="labelInregistreaza">Vârsta:</label>
+                <input type="range" id="age" name="age" min="0" max="120"><br><br>
+
+                <label for="personalpage" class="labelInregistreaza">Adresa paginii personale:</label>
+                <input type="url" id="personalpage" name="personalpage"><br><br>
+
+                <label for="describe" class="labelInregistreaza">Descriere:</label>
+                <textarea id="describe" name="describe" rows="4" cols="50"></textarea>
+            </fieldset>
+        </form>
+
+        <br><br>
+        <input type="button" value="Inregistreaza">
+    </section>
+
+    </body>
+</html>
