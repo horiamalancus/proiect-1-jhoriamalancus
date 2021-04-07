@@ -1,63 +1,138 @@
-<!DOCTYPE html>
-<html lang="RO">
-    <head>
-        <title>Desen</title>
-        <meta charset=utf-8>
-        <link rel="stylesheet" href="css/stil.css">
-    </head>
+<h1>Peisaj de primăvară</h1>
+<section>
+  <h2>Draw</h2>
+  <svg width="5000" height="1000">
+    <!--Gradientul soarelui-->
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop
+          offset="0%"
+          style="stop-color: rgb(255, 255, 0); stop-opacity: 1"
+        />
+        <stop
+          offset="100%"
+          style="stop-color: rgb(255, 0, 0); stop-opacity: 1"
+        />
+      </linearGradient>
+    </defs>
 
-    <body>
+    <!--Dreptunghiurile din background-->
+    <rect
+      x="30"
+      y="0"
+      width="1000"
+      height="905"
+      style="fill: rgba(0, 238, 255, 0.555)"
+    />
+    <rect
+      x="30"
+      y="800"
+      width="270"
+      height="105"
+      style="fill: rgba(0, 255, 149, 0.644)"
+    />
+    <rect
+      x="700"
+      y="800"
+      width="330"
+      height="105"
+      style="fill: rgba(0, 255, 149, 0.644)"
+    />
 
-        <nav>
-            <a href="index.html">Acasa</a> |
-            <a href="inregistreaza.html">Inregistreaza</a> |
-            <a href="video.html">Video</a> |
-            <a href="desen.html">Desen</a> |
-            <a href="despre_html.html">Despre HTML</a> |
-            <a href="invat_js.html">Învăț JS</a>
-        </nav>
+    <!--Soarele-->
+    <circle
+      cx="800"
+      cy="100"
+      r="70"
+      stroke="green"
+      stroke-width="4"
+      fill="url(#grad1)"
+    />
 
-        <h1>Peisaj de primăvară</h1>
-        <section>
-            <h2>Draw</h2>
-            <svg width="5000" height="1000">
-                <!--Gradientul soarelui-->
-                <defs>
-                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
-                      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
-                    </linearGradient>
-                </defs>
+    <!--Dreptunghiul casei-->
+    <rect
+      x="300"
+      y="400"
+      width="400"
+      height="500"
+      style="
+        fill: rgba(0, 0, 255, 0.555);
+        stroke-width: 10;
+        stroke: rgb(0, 0, 0);
+      "
+    />
 
-                <!--Dreptunghiurile din background-->
-                <rect x="30" y="0" width="1000" height="905" style="fill:rgba(0, 238, 255, 0.555)" />
-                <rect x="30" y="800" width="270" height="105" style="fill:rgba(0, 255, 149, 0.644)" />
-                <rect x="700" y="800" width="330" height="105" style="fill:rgba(0, 255, 149, 0.644)" />
+    <!--Acoperisul (Trapez)-->
+    <polygon
+      points="290,400 400,300 600,300 710,400"
+      style="fill: rgb(65, 22, 9); stroke: rgb(0, 0, 0); stroke-width: 5"
+    />
 
-                <!--Soarele-->
-                <circle cx="800" cy="100" r="70" stroke="green" stroke-width="4" fill="url(#grad1)"/>
+    <!--Triunghiul care reprezinta o cusca de caine-->
+    <polygon
+      points="700,700 800,902 700,902 "
+      style="fill: rgb(0, 0, 255, 0.555); stroke: rgb(0, 0, 0); stroke-width: 5"
+    />
 
-                <!--Dreptunghiul casei-->
-                <rect x="300" y="400" width="400" height="500" style="fill:rgba(0, 0, 255, 0.555);stroke-width:10;stroke:rgb(0,0,0)" />
+    <!--Geamurile si usa-->
+    <rect
+      x="350"
+      y="450"
+      width="100"
+      height="100"
+      style="
+        fill: rgba(0, 255, 157, 0.555);
+        stroke-width: 10;
+        stroke: rgb(0, 0, 0);
+      "
+    />
+    <rect
+      x="550"
+      y="450"
+      width="100"
+      height="100"
+      style="
+        fill: rgba(0, 255, 157, 0.555);
+        stroke-width: 10;
+        stroke: rgb(0, 0, 0);
+      "
+    />
+    <rect
+      x="450"
+      y="700"
+      width="100"
+      height="200"
+      style="
+        fill: rgba(0, 255, 157, 0.555);
+        stroke-width: 10;
+        stroke: rgb(0, 0, 0);
+      "
+    />
+    <rect
+      x="725"
+      y="850"
+      width="30"
+      height="50"
+      style="
+        fill: rgba(0, 255, 157, 0.555);
+        stroke-width: 3;
+        stroke: rgb(0, 0, 0);
+      "
+    />
 
-                <!--Acoperisul (Trapez)-->
-                <polygon points="290,400 400,300 600,300 710,400" style="fill:rgb(65, 22, 9);stroke:rgb(0, 0, 0);stroke-width:5" />
+    <!--Horn-->
+    <rect
+      x="525"
+      y="230"
+      width="30"
+      height="70"
+      style="fill: rgba(65, 22, 9); stroke-width: 3; stroke: rgb(0, 0, 0)"
+    />
 
-                <!--Triunghiul care reprezinta o cusca de caine-->
-                <polygon points="700,700 800,902 700,902 " style="fill:rgb(0, 0, 255, 0.555);stroke:rgb(0, 0, 0);stroke-width:5" />
-
-                <!--Geamurile si usa-->
-                <rect x="350" y="450" width="100" height="100" style="fill:rgba(0, 255, 157, 0.555);stroke-width:10;stroke:rgb(0,0,0)" />
-                <rect x="550" y="450" width="100" height="100" style="fill:rgba(0, 255, 157, 0.555);stroke-width:10;stroke:rgb(0,0,0)" />
-                <rect x="450" y="700" width="100" height="200" style="fill:rgba(0, 255, 157, 0.555);stroke-width:10;stroke:rgb(0,0,0)" />
-                <rect x="725" y="850" width="30" height="50" style="fill:rgba(0, 255, 157, 0.555);stroke-width:3;stroke:rgb(0,0,0)" />
-            
-                <!--Horn-->
-                <rect x="525" y="230" width="30" height="70" style="fill:rgba(65, 22, 9);stroke-width:3;stroke:rgb(0,0,0)" />
-
-                <!--Fumul care iese din horn-->
-                <polyline points="535,230 540,210 530,190 540,170 530,150 540,130" style="fill:none;stroke:black;stroke-width:3" />
-            </svg>
-        </section>
-    </body>
-</html>
+    <!--Fumul care iese din horn-->
+    <polyline
+      points="535,230 540,210 530,190 540,170 530,150 540,130"
+      style="fill: none; stroke: black; stroke-width: 3"
+    />
+  </svg>
+</section>
