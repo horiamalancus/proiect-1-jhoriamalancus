@@ -8,6 +8,9 @@ function data() {
 }
 
 function schimbaContinut(resursa) {
+  for (const tag of document.getElementsByClassName("active")) {
+    tag.classList.remove("active");
+  }
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -16,4 +19,5 @@ function schimbaContinut(resursa) {
   };
   xhttp.open("GET", `${resursa}.html`, true);
   xhttp.send();
+  document.getElementById(resursa).classList.add("active");
 }
