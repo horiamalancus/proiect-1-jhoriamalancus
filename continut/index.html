@@ -5,10 +5,8 @@
         <meta charset=utf-8>
         <link rel="stylesheet" href="css/stil.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script lang="js" src="js/script.js"></script>
-        <script lang="js" src="js/cumparaturi.js"></script>
     </head>
-    <body>
+    <body onload="data()">
 
         <nav>
             <a id="acasa" onclick="schimbaContinut('acasa')">Acasă</a> 
@@ -16,13 +14,16 @@
             <a id="video" onclick="schimbaContinut('video')">Video</a> 
             <a id="Desen" onclick="schimbaContinut('Desen')">Desen</a> 
             <a id="despre_html" onclick="schimbaContinut('despre_html')">Despre HTML</a> 
-            <a id="invat_js" onclick="schimbaContinut('invat_js')">Învăț JS</a>
-            <a id="cumparaturi" onclick="schimbaContinut('cumparaturi')">Cumparaturi</a>
+            <a id="invat_js" onclick="schimbaContinut('invat_js','js/script.js','data')">Învăț JS</a>
+            <a id="cumparaturi" onclick="schimbaContinut('cumparaturi')">Cumpărături</a>
+            <a id="persoane" onclick="schimbaContinut('persoane', 'js/persoane.js', 'incarcaPersoane')">Persoane</a>
+            <a id="verifica" onclick="schimbaContinut('verifica')">Verifică</a>
         </nav>
 
-        <main id="continut">
-
-        </main>
-        
+        <main id="continut"></main>
+        <script lang="js" src="js/persoane.js"></script>
+        <script lang="js" src="js/script.js"></script>
+        <script lang="js" src="js/cumparaturi.js"></script>
+        <script lang="js" src="js/verifica.js"></script>
     </body>
 </html>

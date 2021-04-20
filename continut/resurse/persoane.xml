@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE persoane [
+<!ELEMENT persoane (persoana)>
+<!ELEMENT persoana (nume,prenume,varsta,adresa,pregatire,nationalitate)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT pregatire (#PCDATA)>
+<!ELEMENT  nationalitate (#PCDATA)>
+<!ELEMENT adresa (strada,numar,localitate,judet,tara)>
+<!ELEMENT strada (#PCDATA)>
+<!ELEMENT numar (#PCDATA)>
+<!ELEMENT localitate (#PCDATA)>
+<!ELEMENT judet (#PCDATA)>
+<!ELEMENT tara (#PCDATA)> ]>
+
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Florilor</strada>
+            <numar>10</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <pregatire>Informatica</pregatire>
+        <nationalitate>Romana</nationalitate>
+    </persoana>
+
+    <persoana id="2">
+        <nume>Malancus</nume>
+        <prenume>Horia</prenume>
+        <varsta>21</varsta>
+        <adresa>
+            <strada>Castanilor</strada>
+            <numar>11</numar>
+            <localitate>Vaslui</localitate>
+            <judet>Vaslui</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <pregatire>Drept</pregatire>
+        <nationalitate>Spaniola</nationalitate>
+    </persoana>
+
+    <persoana id="3">
+        <nume>Cosmin</nume>
+        <prenume>Danila</prenume>
+        <varsta>26</varsta>
+        <adresa>
+            <strada>Delea</strada>
+            <numar>15</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <pregatire>Tehnica Dentara</pregatire>
+        <nationalitate>Belgiana</nationalitate>
+    </persoana>
+
+    <persoana id="4">
+        <nume>Nicoleta</nume>
+        <prenume>Badarau</prenume>
+        <varsta>20</varsta>
+        <adresa>
+            <strada>Stefan Cel Mare</strada>
+            <numar>29</numar>
+            <localitate>Vaslui</localitate>
+            <judet>Vaslui</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <pregatire>ASE</pregatire>
+        <nationalitate>Engleza</nationalitate>
+    </persoana>
+
+    <persoana id="5">
+        <nume>Denisa</nume>
+        <prenume>Grigoras</prenume>
+        <varsta>22</varsta>
+        <adresa>
+            <strada>Securitatii</strada>
+            <numar>30</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <pregatire>Stiinte Politice</pregatire>
+        <nationalitate>Franceza</nationalitate>
+    </persoana>
+
+    <persoana id="6">
+        <nume>Aura</nume>
+        <prenume>Miron</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Lalelelor</strada>
+            <numar>12</numar>
+            <localitate>Bucuresti</localitate>
+            <judet>Bucuresti</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <pregatire>Informatica</pregatire>
+        <nationalitate>Romana</nationalitate>
+    </persoana>
+
+</persoane>

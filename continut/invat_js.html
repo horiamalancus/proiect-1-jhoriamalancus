@@ -1,8 +1,50 @@
+<section class="invat_js">
+  <div id="date" class="invat_js"></div>
+  <div id="location" class="invat_js"></div>
+  <div id="browserLocation" class="invat_js"></div>
+  <div id="browserName" class="invat_js"></div>
+  <div id="browserVersion" class="invat_js"></div>
+  <div id="os" class="invat_js"></div>
+</section>
 
-        <section>
-            <p id="i1">        
-            </p>
-            
-            <p id="i2">
-            </p>
-        </section>
+<section>
+  <p class="invat_js">Internet loto</p>
+  <p class="invat_js">Pentru fiecare număr introduceți valori cuprinse între 00 și FF</p>
+
+  <input id="nr1" pattern="[A-Z0-9]{2}">
+  <input id="nr2" pattern="[A-Z0-9]{2}">
+  <input id="nr3" pattern="[A-Z0-9]{2}">
+  <input id="nr4" pattern="[A-Z0-9]{2}">
+  <input id="nr5" pattern="[A-Z0-9]{2}">
+  <input id="nr6" pattern="[A-Z0-9]{2}">
+  <input id="nr7" pattern="[A-Z0-9]{2}">
+  <input id="nr8" pattern="[A-Z0-9]{2}">
+
+  <div id="loto" class="loto"></div>
+
+  <p id="nrGhicite" class="nrGhicite"></p>
+
+  <input type="button" value="Extrage" onclick="extragere()">
+</section>
+
+<section class="myCanvas">
+  <label for="contur">Selectați culoarea pentru contur:</label>
+  <input type="color" id="contur" name="contur" value="#ff0000">
+  <br>
+  <label for="contur">Selectați culoarea pentru umplere:</label>
+  <input type="color" id="umplere" name="umplere" value="#ff0000">
+  <br>
+  <canvas id="myCanvas" onclick="draw(event)" class="myCanvas">
+  </canvas>
+</section>
+
+<section>
+  <label for="text">Selectati numărul de linii/coloane: </label>
+  <input type="text" id="numarLC" name="numeLC"></br>
+  <input type="color" id="culoare" name="culoare" value="#ff0000"></br>
+  <input type="button" value="Adaugă Linie" onclick="adaugaLinie()">
+  <input type="button" value="Adaugă Coloană" onclick="adaugaColoana()">
+  <table id="tabelJs">
+    <thead id = "tHead"></thead>
+  </table>
+</section>
